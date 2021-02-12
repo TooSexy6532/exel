@@ -1,1 +1,4 @@
-nod_modules
+node_modules
+dist
+.vscode
+.eslinrc
