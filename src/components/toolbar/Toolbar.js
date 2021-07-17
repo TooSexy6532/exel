@@ -4,7 +4,7 @@ import { ExcelStateComponent } from '../../core/ExcelStateComponent';
 import { defaultStyles } from '../../constances';
 
 export class Toolbar extends ExcelStateComponent {
-    static className = 'exel__toolbar'
+    static className = 'excel__toolbar'
 
     constructor($root, options) {
         super($root, {

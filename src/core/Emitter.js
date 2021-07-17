@@ -19,7 +19,7 @@ export class Emitter {
         return () => {
             this.listeners[event] =
                 // eslint-disable-next-line no-undef
-                this.listeners[event].filter(listener = listener !== fn)
+                this.listeners[event].filter(listener => listener !== fn)
         }
     }
 }

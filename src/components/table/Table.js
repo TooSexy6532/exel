@@ -9,7 +9,7 @@ import {defaultStyles} from '@/constances'
 import {parse} from '@core/parse'
 
 export class Table extends ExcelComponent {
-    static className = 'exel__table'
+    static className = 'excel__table'
     
     constructor($root, options) {
         super($root, {
