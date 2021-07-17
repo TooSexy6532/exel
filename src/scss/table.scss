@@ -1,7 +1,7 @@
 @import "variables";
 @import "mixins";
 
-.exel__table {
+.excel__table {
     position: absolute;
     left: 0;
     right: 0;
@@ -27,6 +27,7 @@
         border: 1px solid $border-color;
         background-color: #f8f9fa;
         border-top: none;
+        user-select: none;
     }
 
     .row-data {
@@ -46,6 +47,7 @@
         background-color: #f8f9fa;
         border-top: none;
         border-left: none;
+        user-select: none;
     }
 
     .cell {

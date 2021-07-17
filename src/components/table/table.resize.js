@@ -11,7 +11,8 @@ export function resizeHandler($root, event) {
 
         $resizer.css({
             opacity: 1,
-            [sideProp]: '-5000px',
+            zIndex: 999,
+            [sideProp]: '-5000px'
         })
 
         document.onmousemove = e => {

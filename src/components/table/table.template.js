@@ -15,7 +15,7 @@ function getWidth(state, index) {
 }
 
 function getHeight(state, index) {
-    return `${state[index] || DEFAULT_HEIGHT}px`
+    return (state[index] || DEFAULT_HEIGHT) + 'px'
 }
 
 function toCell(state, row) {
