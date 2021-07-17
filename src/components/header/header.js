@@ -1,7 +1,7 @@
 import { ExcelComponent } from '@core/ExcelComponent';
 import { defaultTitle } from '../../constances';
 import { $ } from '../../core/dom';
-import { ActiveRoute } from '../../core/routs/ActiveRoute';
+import { ActiveRoute } from '../../core/routes/ActiveRoute';
 import { changeTitle } from '../../redux/actions';
 
 export class Header extends ExcelComponent {
@@ -14,7 +14,7 @@ export class Header extends ExcelComponent {
             ...options
         })
     }
-    
+
     preapre() {
 
     }
@@ -36,11 +36,11 @@ export class Header extends ExcelComponent {
 
     onClick(event) {
         const $target = $(event.target)
-    
+
         if ($target.data.button === 'remove') {
-            const decision 
-            = confirm('Вы действительно хотите удалить эту таблицу?')
-    
+            const decision
+                = confirm('Вы действительно хотите удалить эту таблицу?')
+
             if (decision) {
                 localStorage.removeItem('excel:' + ActiveRoute.param)
                 ActiveRoute.navigate('')

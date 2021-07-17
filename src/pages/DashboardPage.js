@@ -3,9 +3,9 @@ import { Page } from '../core/page';
 import { getAllRecords } from './dashboard.functions';
 
 export class DashboardPage extends Page {
-    getRoot() {
-        const now = Date.now().toString()
-        return $.create('div', 'db').html(`
+  getRoot() {
+    const now = Date.now().toString()
+    return $.create('div', 'db').html(`
         <div class="db__header">
           <h1>Excel Dashboard</h1>
         </div>
@@ -22,5 +22,5 @@ export class DashboardPage extends Page {
             ${getAllRecords()}
         </div>
         `)
-    }
+  }
 }
