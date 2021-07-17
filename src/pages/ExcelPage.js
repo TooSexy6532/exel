@@ -1,12 +1,12 @@
-import {Page} from '../core/page';
-import {Excel} from '@/components/excel/Excel'
-import {Header} from '@/components/header/Header'
-import {Toolbar} from '@/components/toolbar/Toolbar'
-import {Formula} from '@/components/formula/Formula'
-import {Table} from '@/components/table/Table'
-import {createStore} from '@core/createStore'
-import {rootReducer} from '@/redux/rootReducer'
-import {storage, debounce} from '@core/utils'
+import { Excel } from '@/components/excel/Excel';
+import { Formula } from '@/components/formula/Formula';
+import { Header } from '@/components/header/Header';
+import { Table } from '@/components/table/Table';
+import { Toolbar } from '@/components/toolbar/Toolbar';
+import { rootReducer } from '@/redux/rootReducer';
+import { createStore } from '@core/store/createStore';
+import { debounce, storage } from '@core/utils';
+import { Page } from '../core/page';
 import { normalizeInitialState } from '../redux/initialState';
 
 function storageName(param) {
@@ -31,7 +31,7 @@ export class ExcelPage extends Page {
             store
         })
 
-        return this.excel.getRoot()        
+        return this.excel.getRoot()
     }
 
     afterRender() {
